@@ -14,6 +14,7 @@ out vec4 out_col;
 void main()
 {
     vec2 uv = v_uv * 0.5 + 0.5;
+    uv.x += 0.5;
     vec2 wh = vec2(u_width, u_height);
     vec2 xy = uv * wh;
     float p = xy.x + xy.y * u_width;
